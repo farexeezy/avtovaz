@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./static/styles.css">
     <div class="title">
     <div class="title_1">
-        <img src="./img/logo.png">
+        <img src="{{url_for('static', filename='logo.png')}}">
     <div class="button_glavnaya">
-        <p><a href="./index.html"><img src="./img/glavnaya.png"></a></p>
+        <p><a href="{{url_for('index')}}"><img src="{{url_for('static', filename='glavnaya.png')}}"></a></p>
     </div>
     </div>
     
@@ -19,7 +19,7 @@
 <body>
     <div class="granata">
         <div class="head_granata">
-            <img src="./img/main_granata.jpg" alt="" />
+            <img src="{{url_for('static', filename='main_granata.jpg')}}" alt="" />
                 <h2>LADA GRANTA СЕДАН</h2>
                 <h4>ДЕРЖИТ СЛОВО</h4>
                 <div class="price_granata">
@@ -35,7 +35,7 @@
     </div>
     <div class="color_granata">
         <h2>ЦВЕТОВАЯ ГАММА</h2>
-        <img src="./img/195_granata.png">
+        <img src="{{url_for('static', filename='195_granata.png')}}">
         <div class="styles_color">
             <button type="button", class="button1">
             </button>
@@ -75,8 +75,8 @@
     </div>
     <div class="tech_granata">
         <h2>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
-        <img src="./img/granata_tech.png">
-        <img src="./img/granata_tech_tabl.png">
+        <img src="{{url_for('static', filename='granata_tech.png')}}">
+        <img src="{{url_for('static', filename='granata_tech_tabl.png')}}">
     </div>
 
 
